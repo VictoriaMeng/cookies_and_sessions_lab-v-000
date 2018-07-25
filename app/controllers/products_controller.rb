@@ -5,6 +5,7 @@ class ProductsController < ApplicationController
 
   def add
     cart = cart
+    cart << params[:product]
     binding.pry
     redirect_to root
   end
