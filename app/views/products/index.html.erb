@@ -1,4 +1,4 @@
-<% @cart.each do |item| %>
+<% session[:cart] do |item| %>
   <%= item %>
 <% end %>
 
