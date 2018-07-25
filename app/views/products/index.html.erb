@@ -1,8 +1,8 @@
-<% if @cart %>
+
   <% @cart.each do |item| %>
     <%= item %>
   <% end %>
-<% end %>
+
 
 <%= form_tag("/", method: "post") do %>
   <%= label_tag(:product, "Product") %>
