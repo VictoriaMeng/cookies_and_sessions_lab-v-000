@@ -7,6 +7,7 @@ class ProductsController < ApplicationController
     cart = cart
     cart << params[:product]
     session[:cart] = cart
+    @cart = session[:cart]
     binding.pry
     redirect_to root
   end
