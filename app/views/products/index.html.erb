@@ -1,5 +1,5 @@
-<% form_for @cart do |f| %>
-  <%= f.label "Product" %>
-  <%= f.text_field :product %>
-  <%= f.submit %>
+<%= form_tag("/", method: "post") do %>
+  <%= label_tag(:product, "Product") %>
+  <%= text_field_tag(:product) %>
+  <%= submit_tag("Submit") %>
 <% end %>
